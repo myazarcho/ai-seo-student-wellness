@@ -37,21 +37,39 @@ uncertainty about university support services.
 
 ## Repository structure
 
-- `01-project-foundation/` - project scope and boundaries
-- `02-audience-persona/` - target user profile
-- `03-problem-and-goal/` - problem statement and project goal
-- `04-user-search-journey/` - user journey and search intent
-- `05-keyword-research/` - keyword dataset and research notes
-- `06-content-strategy/` - content pillars and strategy
-- `07-first-article/` - first article outline and draft
-- `08-evaluation/` - SEO and safety evaluations
-- `09-content-calendar/` - editorial calendar and article plan
-- `10-ai-workflow/` - prompts, workflow notes, and AI usage log
-- `11-dashboard/` - Streamlit student-support app and admin strategy area
-- `articles.csv` - public article titles and summaries, plus hidden fields used
-  for deterministic recommendations
-- `prompts/` - reusable AI prompts
-- `tests/` - automated checks for dashboard data and helper logic
+```text
+app/
+  app.py
+  components/
+  pages/
+  utils/
+assets/
+data/
+docs/
+tests/
+.streamlit/
+README.md
+requirements.txt
+.gitignore
+LICENSE
+```
+
+- `app/` - Streamlit application entry point and future app modules
+- `assets/` - visual assets used by the app
+- `data/` - runtime CSV data used by recommendations and admin views
+- `docs/` - research, strategy, article drafts, evaluations, and AI workflow notes
+- `tests/` - automated checks for data validation and recommendation logic
+- `.streamlit/` - Streamlit theme configuration
+
+Documentation is organized under `docs/`:
+
+- `docs/project-foundation/` - project scope, boundaries, problem, and goal
+- `docs/audience-persona/` - target student profile
+- `docs/research-strategy/` - search journey and keyword research notes
+- `docs/content-strategy/` - content strategy and content calendar notes
+- `docs/articles/` - article outlines and drafts
+- `docs/evaluation/` - SEO and safety evaluations
+- `docs/ai-workflow/` - AI workflow notes, usage log, and prompts
 
 ## Public app features
 
@@ -96,7 +114,7 @@ python3 -m pip install -r requirements.txt
 ## Run the app
 
 ```bash
-python3 -m streamlit run 11-dashboard/app.py
+python3 -m streamlit run app/app.py
 ```
 
 Streamlit will print a local URL, usually `http://localhost:8501`. The root
@@ -113,7 +131,7 @@ This repository is ready to deploy from GitHub.
 3. Set the app's main file path to:
 
    ```text
-   11-dashboard/app.py
+   app/app.py
    ```
 
 4. Leave secrets empty. This app does not require API keys or private
@@ -127,8 +145,8 @@ Deployment notes:
 - Keep `.streamlit/config.toml` committed for the public theme.
 - Do not commit `.streamlit/secrets.toml`, `.env`, virtual environments, or
   generated cache files.
-- The dashboard reads local repository files with `pathlib`, so the research
-  folders must remain in the same relative locations.
+- The app reads local repository files with `pathlib`, so `app/`, `data/`,
+  `docs/`, and `assets/` should remain in the same relative locations.
 
 ## Run tests
 
@@ -140,20 +158,16 @@ The tests verify that the CSV files exist, required columns are present, invalid
 CSV schemas fail clearly, and the public chat matching/recommendation logic
 behaves as expected.
 
-## License recommendation
+## License
 
-Recommended license: MIT License.
-
-MIT is a good fit for a public portfolio dashboard because it is simple,
-permissive, and familiar to open-source users. Add a `LICENSE` file before
-public release if you want visitors to reuse the code. If the research content
-should have different reuse terms than the code, document that separately.
+This project includes an MIT License. If the research content should have
+different reuse terms than the code, document that separately.
 
 ## CSV schemas
 
 The app expects these files and columns:
 
-- `articles.csv`
+- `data/articles.csv`
   - `title`
   - `summary`
   - `topic`
@@ -162,14 +176,14 @@ The app expects these files and columns:
   - `source_keyword`
   - `status`
 
-- `05-keyword-research/keyword-research.csv`
+- `data/keyword-research.csv`
   - `Keyword`
   - `Topic`
   - `Search Intent`
   - `Priority`
   - `Safety Level`
   - `Suggested Content Type`
-- `09-content-calendar/content-calendar.csv`
+- `data/content-calendar.csv`
   - `Week`
   - `Article Title`
   - `Primary Keyword`

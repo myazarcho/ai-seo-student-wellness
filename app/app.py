@@ -10,15 +10,15 @@ import streamlit as st
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-KEYWORD_FILE = PROJECT_ROOT / "05-keyword-research" / "keyword-research.csv"
-CALENDAR_FILE = PROJECT_ROOT / "09-content-calendar" / "content-calendar.csv"
-ARTICLES_FILE = PROJECT_ROOT / "articles.csv"
-ARTICLE_DRAFT_FILE = PROJECT_ROOT / "07-first-article" / "article-draft.md"
-SEO_EVALUATION_FILE = PROJECT_ROOT / "08-evaluation" / "seo-evaluation.md"
-SAFETY_EVALUATION_FILE = PROJECT_ROOT / "08-evaluation" / "safety-evaluation.md"
-CONTENT_STRATEGY_FILE = PROJECT_ROOT / "06-content-strategy" / "content-strategy.md"
-AI_WORKFLOW_FILE = PROJECT_ROOT / "10-ai-workflow" / "ai-workflow.md"
-PROMPT_LIBRARY_FILE = PROJECT_ROOT / "10-ai-workflow" / "prompt-library.md"
+KEYWORD_FILE = PROJECT_ROOT / "data" / "keyword-research.csv"
+CALENDAR_FILE = PROJECT_ROOT / "data" / "content-calendar.csv"
+ARTICLES_FILE = PROJECT_ROOT / "data" / "articles.csv"
+ARTICLE_DRAFT_FILE = PROJECT_ROOT / "docs" / "articles" / "article-draft.md"
+SEO_EVALUATION_FILE = PROJECT_ROOT / "docs" / "evaluation" / "seo-evaluation.md"
+SAFETY_EVALUATION_FILE = PROJECT_ROOT / "docs" / "evaluation" / "safety-evaluation.md"
+CONTENT_STRATEGY_FILE = PROJECT_ROOT / "docs" / "content-strategy" / "content-strategy.md"
+AI_WORKFLOW_FILE = PROJECT_ROOT / "docs" / "ai-workflow" / "ai-workflow.md"
+PROMPT_LIBRARY_FILE = PROJECT_ROOT / "docs" / "ai-workflow" / "prompt-library.md"
 CHARACTER_FILE = PROJECT_ROOT / "assets" / "mira-character.png"
 
 REQUIRED_KEYWORD_COLUMNS = {

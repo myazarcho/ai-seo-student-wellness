@@ -8,7 +8,7 @@ import pytest
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-APP_PATH = PROJECT_ROOT / "11-dashboard" / "app.py"
+APP_PATH = PROJECT_ROOT / "app" / "app.py"
 
 spec = importlib.util.spec_from_file_location("dashboard_app", APP_PATH)
 dashboard_app = importlib.util.module_from_spec(spec)
