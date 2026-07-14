@@ -31,3 +31,23 @@ This project provides general educational and self-management information. It do
 
 ## Current Status
 Project foundation and starter files created.
+
+## Interactive Dashboard
+
+This project includes a Streamlit dashboard for exploring keyword
+research, search intent, content topics, priorities, safety levels,
+and the content calendar.
+
+### Run Locally
+
+1. Create the virtual environment:
+   `python3 -m venv .venv`
+
+2. Activate it:
+   `source .venv/bin/activate`
+
+3. Install dependencies:
+   `python -m pip install -r requirements.txt`
+
+4. Run the app:
+   `python -m streamlit run 11-dashboard/app.py`
