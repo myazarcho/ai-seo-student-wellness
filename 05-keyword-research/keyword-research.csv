@@ -1,11 +1,31 @@
-﻿Keyword,Topic,Search Intent,Priority
-how to manage multiple assignment deadlines,Deadlines,Informational / problem-solving,Primary
-academic stress for university students,Academic stress,Informational,Secondary
-how to prioritize assignments,Time management,Problem-solving,Secondary
-study schedule for university students,Planning,Informational,Secondary
-feeling overwhelmed with university work,Academic stress,Support-seeking,Secondary
-presentation anxiety for students,Presentation,Informational,Secondary
-exam stress management for students,Exams,Problem-solving,Secondary
-time management for international students,Time management,Informational,Secondary
-how to ask a professor for help,Communication,Problem-solving,Secondary
-university counselling services for students,Support resources,Navigational / informational,Secondary
+﻿Keyword,Topic,Search Intent,Priority,Safety Level,Suggested Content Type
+how to manage multiple assignment deadlines,Assignment Management,Problem-solving,Primary,Low,How-to article
+how to prioritize assignments,Assignment Management,Problem-solving,High,Low,Checklist article
+study plan for multiple deadlines,Assignment Management,Problem-solving,High,Low,Template or guide
+assignment planning for students,Assignment Management,Informational,Medium,Low,Planning guide
+how to break down a large assignment,Assignment Management,Problem-solving,High,Low,Step-by-step article
+academic stress for university students,Academic Stress,Informational,High,Medium,Educational article
+feeling overwhelmed with university work,Academic Stress,Support-seeking,High,Medium,Supportive guide
+how to manage university workload,Academic Stress,Problem-solving,High,Low,How-to article
+student burnout prevention,Academic Stress,Informational,Medium,Medium,Educational article
+how to balance study and rest,Academic Stress,Problem-solving,High,Low,Practical guide
+time management for university students,Time Management,Informational,High,Low,Pillar article
+time management for international students,Time Management,Informational,High,Low,Audience-specific guide
+weekly study schedule for students,Time Management,Problem-solving,High,Low,Template article
+time blocking for students,Time Management,Informational,Medium,Low,How-to guide
+how to stop procrastinating on assignments,Time Management,Problem-solving,Medium,Medium,Practical guide
+exam stress management for students,Exams,Problem-solving,High,Medium,Supportive guide
+study plan before exams,Exams,Problem-solving,High,Low,Planning template
+how to prepare for exams without all nighters,Exams,Problem-solving,Medium,Low,Educational article
+presentation anxiety for students,Presentations,Support-seeking,High,Medium,Supportive guide
+how to prepare for an academic presentation,Presentations,Problem-solving,High,Low,Checklist article
+how to ask a professor for help,University Support,Problem-solving,High,Low,Communication guide
+when to contact an academic adviser,University Support,Informational,Medium,Low,Educational article
+university counselling services for students,University Support,Navigational,High,Medium,Resource guide
+student support office,University Support,Navigational,Medium,Low,Resource guide
+academic adviser vs counsellor,University Support,Informational,Medium,Low,Comparison article
+international student loneliness,International Students,Support-seeking,Medium,Medium,Supportive article
+adjusting to university life abroad,International Students,Informational,High,Low,Practical guide
+how to make friends as an international student,International Students,Problem-solving,Medium,Low,Lifestyle guide
+homesickness for international students,International Students,Support-seeking,Medium,Medium,Supportive guide
+how to communicate with professors in Japan,International Students,Problem-solving,Medium,Low,Communication guide
